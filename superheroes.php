@@ -84,10 +84,11 @@ $newString = filter_var($_GET['query'], FILTER_SANITIZE_STRING);
         <h3><?= $superhero['alias']; ?></h3>
         <h4><?= $superhero['name']; ?></h4>
         <p><?= $superhero['biography']; ?></p>
+        <?php break?>
     <?php endif;?>
 <?php endforeach; ?>
 
-<?php if($newString != $superhero['name'] && $newString != "" &&  $newString == $superhero['alias']):?>
+<?php if($newString != $superhero['name'] && $newString != "" &&  $newString != $superhero['alias']):?>
 
-<h2>"Superhero not found"</h2>
-]]<?php endif;?>
+<h2>"SUPERHERO NOT FOUND"</h2>
+<?php endif;?>
